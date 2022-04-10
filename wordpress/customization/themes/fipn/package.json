@@ -1,0 +1,39 @@
+{
+  "name": "fipn-wordpress-theme",
+  "version": "1.0.0",
+  "description": "FIPN Wordpress theme",
+  "author": "Dmitriy Vergiles",
+  "license": "Closed",
+  "keywords": [
+    "WordPress",
+    "Theme"
+  ],
+  "devDependencies": {
+    "@wordpress/stylelint-config": "20.0.1",
+    "@wordpress/eslint-plugin": "10.0.1",
+    "@wordpress/prettier-config": "1.1.2",
+    "rtlcss": "^3.5.0",
+    "eslint": "^8.9.0",
+    "prettier": "^2.5.1",
+    "stylelint": "^14.5.1"
+  },
+  "rtlcssConfig": {
+    "options": {
+      "autoRename": false,
+      "autoRenameStrict": false,
+      "blacklist": {},
+      "clean": true,
+      "greedy": false,
+      "processUrls": false,
+      "stringMap": []
+    },
+    "plugins": [],
+    "map": false
+  },
+  "scripts": {
+    "compile:rtl": "rtlcss style.css style-rtl.css",
+    "lint:css": "stylelint **/*.css --fix",
+    "lint:format": "prettier --write **/*.{css,js,json}",
+    "lint:js": "eslint 'js/*.js'"
+  }
+}

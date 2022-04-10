@@ -1,0 +1,99 @@
+version: '3.1'
+
+services:
+  mysql:
+    image: mysql:8.0.28
+    container_name: mysql
+    command: [ 'mysqld', '--default-authentication-plugin=mysql_native_password', '--character-set-server=utf8', '--collation-server=utf8_unicode_ci' ]
+    restart: always
+    env_file: .env
+    environment:
+      MYSQL_DATABASE: $MYSQL_DATABASE
+      MYSQL_ROOT_PASSWORD: $MYSQL_ROOT_PASSWORD
+      MYSQL_USER: $MYSQL_USER
+      MYSQL_PASSWORD: $MYSQL_PASSWORD
+    volumes:
+      - './_db/mysql:/var/lib/mysql'
+    networks:
+      fipn-network:
+        ipv4_address: 10.227.22.2
+
+  phpmyadmin:
+    depends_on:
+      - mysql
+    image: phpmyadmin:5.1
+    container_name: phpmyadmin
+    restart: always
+    environment:
+      PMA_ARBITRARY: 1
+      PMA_HOST: mysql
+    networks:
+      fipn-network:
+        ipv4_address: 10.227.22.3
+
+  wordpress:
+    depends_on:
+      - mysql
+    image: wordpress:5.9-php7.4-fpm-alpine
+    container_name: wordpress
+    restart: always
+    env_file: .env
+    environment:
+      WORDPRESS_DB_HOST: mysql
+      WORDPRESS_DB_USER: $MYSQL_USER
+      WORDPRESS_DB_PASSWORD: $MYSQL_PASSWORD
+      WORDPRESS_DB_NAME: $MYSQL_DATABASE
+      WORDPRESS_TABLE_PREFIX: $WORDPRESS_TABLE_PREFIX
+      # Удалить на проде
+      WORDPRESS_DEBUG: 1
+      WORDPRESS_AUTH_KEY: $WORDPRESS_AUTH_KEY
+      WORDPRESS_SECURE_AUTH_KEY: $WORDPRESS_SECURE_AUTH_KEY
+      WORDPRESS_LOGGED_IN_KEY: $WORDPRESS_LOGGED_IN_KEY
+      WORDPRESS_NONCE_KEY: $WORDPRESS_NONCE_KEY
+      WORDPRESS_AUTH_SALT: $WORDPRESS_AUTH_SALT
+      WORDPRESS_SECURE_AUTH_SALT: $WORDPRESS_SECURE_AUTH_SALT
+      WORDPRESS_LOGGED_IN_SALT: $WORDPRESS_LOGGED_IN_SALT
+      WORDPRESS_NONCE_SALT: $WORDPRESS_NONCE_SALT
+      WORDPRESS_CONFIG_EXTRA: |
+        # Move wp-content folder because of security issues
+        define( 'WP_CONTENT_DIR', dirname(__FILE__) . '/customization' );
+        define( 'WP_CONTENT_URL', 'http://10.227.22.5/customization' );
+        # Move plugins folder because of security issues
+        define( 'WP_PLUGIN_DIR', dirname(__FILE__) . '/customization/wp-plugins' );
+        define( 'WP_PLUGIN_URL', 'http://10.227.22.5/customization/wp-plugins' );
+        define( 'PLUGINDIR', dirname(__FILE__) . '/customization/wp-plugins' );
+        # Move uploads folder because of security issues 
+        define( 'UPLOADS', 'customization/multimedia');
+        # Можно увеличить кол-во памяти для PHP если будет надо
+        # define( 'WP_MEMORY_LIMIT', '96M');
+        # Можно настроить постраничное кэширование, https://habr.com/ru/post/251189/
+        # define('WP_CACHE', true);
+        # Можно настроить как часто очищать корзину в днях, 30 по умолчанию
+        # define('EMPTY_TRASH_DAYS', 30);
+    volumes:
+      - './wordpress:/var/www/html'
+    networks:
+      fipn-network:
+        ipv4_address: 10.227.22.4
+
+  nginx:
+    depends_on:
+      - wordpress
+    image: nginx:1.21.6-alpine
+    container_name: nginx
+    restart: always
+    ports:
+      - '0.0.0.0:80:80'
+    volumes:
+      - './wordpress:/var/www/html'
+      - './nginx:/etc/nginx/conf.d'
+    networks:
+      fipn-network:
+        ipv4_address: 10.227.22.5
+
+networks:
+  fipn-network:
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.227.22.0/24
