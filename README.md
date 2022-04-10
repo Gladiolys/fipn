@@ -1,9 +1,8 @@
-### Первый запуск
-```
- docker-compose up --force-recreate --remove-orphans
-```
-
 ### Запуск
+1. Установить Docker
+2. Скопировать .env.example в .env
+3. Заполнить .env
+4. Выполнить:
 ```
  docker-compose up
 ```
@@ -13,14 +12,16 @@
  docker-compose down
 ```
 
-### Переустановка всего
+### Переустановка и удаление всего(сделай бэкап)
 ```
 docker-compose down
 docker rm $(docker ps -a -q)
-docker rmi $(docker images -q)
-sudo rm -rf _db
+docker rmi -f $(docker images -q)
 sudo chmod -R 777 wordpress/
+sudo chmod -R 777 _db/
+sudo rm -rf _db
 sudo rm -rf wordpress/
+docker-compose up --force-recreate --remove-orphans
 ```
 
 ### Показать все запущенные контейнеры
@@ -41,6 +42,12 @@ docker rm $(docker ps -a -q)
 ### Удалить все images
 ```
 docker rmi $(docker images -q)
+```
+
+### Залесть внутрь контейнера
+```
+docker ps
+docker exec -it <container name> /bin/bash
 ```
 
 ## Что вообще тут есть?
