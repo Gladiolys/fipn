@@ -55,21 +55,23 @@ services:
       WORDPRESS_LOGGED_IN_SALT: $WORDPRESS_LOGGED_IN_SALT
       WORDPRESS_NONCE_SALT: $WORDPRESS_NONCE_SALT
       WORDPRESS_CONFIG_EXTRA: |
-        # Move wp-content folder because of security issues
+        # Изменен путь до wp-content в целях безопасности
         define( 'WP_CONTENT_DIR', dirname(__FILE__) . '/customization' );
         define( 'WP_CONTENT_URL', 'http://10.227.22.5/customization' );
-        # Move plugins folder because of security issues
+        # Изменен путь до папки с плагинами в целях безопасности
         define( 'WP_PLUGIN_DIR', dirname(__FILE__) . '/customization/wp-plugins' );
         define( 'WP_PLUGIN_URL', 'http://10.227.22.5/customization/wp-plugins' );
         define( 'PLUGINDIR', dirname(__FILE__) . '/customization/wp-plugins' );
-        # Move uploads folder because of security issues 
+        # Изменен путь до папки с загрузками в целях безопасности
         define( 'UPLOADS', 'customization/multimedia');
+        # Отключен редактор файлов в целях безопасности
+        define('DISALLOW_FILE_EDIT', true);
         # Можно увеличить кол-во памяти для PHP если будет надо
         # define( 'WP_MEMORY_LIMIT', '96M');
-        # Можно настроить постраничное кэширование, https://habr.com/ru/post/251189/
-        # define('WP_CACHE', true);
         # Можно настроить как часто очищать корзину в днях, 30 по умолчанию
         # define('EMPTY_TRASH_DAYS', 30);
+        # Включить когда будет SSL сертификат
+        # define('FORCE_SSL_ADMIN', true);
     volumes:
       - './wordpress:/var/www/html'
     networks:

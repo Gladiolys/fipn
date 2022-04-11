@@ -136,3 +136,9 @@ add_action( 'wp_head', 'fipn_preload_webfonts' );
 
 // Add block patterns
 //require get_template_directory() . '/inc/block-patterns.php';
+
+
+function wp_version_remove_version() {
+  return '';
+}
+add_filter('the_generator', 'wp_version_remove_version');

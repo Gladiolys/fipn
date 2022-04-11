@@ -24,6 +24,8 @@ function twentytwentytwo_register_block_patterns() {
 	/**
 	 * Filters the theme block pattern categories.
 	 *
+	 * @since Twenty Twenty-Two 1.0
+	 *
 	 * @param array[] $block_pattern_categories {
 	 *     An associative array of block pattern categories, keyed by category name.
 	 *

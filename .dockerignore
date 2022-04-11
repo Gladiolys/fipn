@@ -1,5 +1,4 @@
 .env
-.
 docker-compose.yml
 _db
 
@@ -10,7 +9,19 @@ _db
 .idea
 .vscode
 .dockerignore
-yarn-error.log
 
-wordpress/customization/themes/fipn/node_modules
-wordpress/customization/themes/fipn1/node_modules
+**/node_modules
+
+# Meta
+**/.DS_Store
+
+# Logs
+logs
+*.log
+**/**/npm-debug.log*
+**/**/yarn-error.log
+
+wordpress/customization/multimedia
+wordpress/customization/uploads
+wordpress/customization/cache
+
