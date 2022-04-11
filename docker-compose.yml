@@ -66,6 +66,12 @@ services:
         define( 'UPLOADS', 'customization/multimedia');
         # Отключен редактор файлов в целях безопасности
         define('DISALLOW_FILE_EDIT', true);
+        # Увеличен размер загружаемых файлов для нужд бэкапов
+        @ini_set('upload_max_size' , '600M' );
+        @ini_set( 'post_max_size', '128M');
+        @ini_set( 'memory_limit', '256M' );
+        @ini_set( 'max_execution_time', '300' );
+        @ini_set( 'max_input_time', '300' );
         # Можно увеличить кол-во памяти для PHP если будет надо
         # define( 'WP_MEMORY_LIMIT', '96M');
         # Можно настроить как часто очищать корзину в днях, 30 по умолчанию

@@ -5,6 +5,7 @@ _db
 wordpress/customization/multimedia
 wordpress/customization/uploads
 wordpress/customization/cache
+wordpress/customization/ai1wm-backups
 
 # Meta
 **/.DS_Store
