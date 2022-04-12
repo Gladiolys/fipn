@@ -126,10 +126,9 @@ https://github.com/docker-library/wordpress/blob/master/wp-config-docker.php
 2. Добавлен префикс к таблица 
 3. Изменено имя uploads на multimedia 
 4. Изменено имя plugins на wp-plugins 
-5. Переопределены урлы входа и регистрации.
+5. Переопределен урл входа.
 ```
 урл входа: /edit-content
-урл регистрации: /start-manage-system
 ```
 
 6. Установлен плагин Security 
@@ -147,17 +146,6 @@ function wp_version_remove_version() {
   return '';
 }
 add_filter('the_generator', 'wp_version_remove_version');
-```
-
-### TODO
-Настроить:
-```
-Content-Security Policy
-X-XSS-Protection
-Strict-Transport-Security
-X-Frame-Options
-Public-Key-Pins
-X-Content-Type
 ```
 
 ## Как работаю права
@@ -205,38 +193,46 @@ ls -l | awk '{k=0;for(i=0;i<=8;i++)k+=((substr($1,i+2,1)~/[rwx]/) \
 2. Минификация и склеивание JS,CSS, HTML - Autoptimize
 3. Кэш - WP Super Cache
 4. Безопасность - iThemes Security
-5. SEO - Yoast SEO
+5. SEO - All in One SEO
 6. Отключение комментов - Отключить комментарии
 7. Статистика - WP Statistics
 8. Встраивание PDF - PDF Embedder
 9. Настройки SSL сертификата - Really Simple SSL
+10. Миграция, бэкапы и восстановление - All-in-One WP Migration
+11. Отключение неиспользуемого REST API - Отключить REST API
+12. Спрятать страницу входа - WPS Hide Login
+
+## Особенности
+1. Для загрузки больших файлов используется кастомный uploads.ini
+2. Иногда надо руками чистить журнал безопасности. Инструменты/ITSec Log Cleaner
 
 ## Как деплоить с Docker.
 1. Самый простой путь:
-Положить wordpress, _db папки и docker-compose.yaml на прод. 
+Положить wordpress, _db папки и docker-compose.yaml, uploads.ini, .env на прод. 
 Выполнить:
 ```
  docker-compose up
 ``` 
 
+### Что хочу от SEO
+robots.txt
+sitemap
+Предпросмотр как будет выглядеть пост в поисках и соц сетях
+Настройку мета тегов
 
 ## Как деплоить без Docker.
-1. Положить пуcтой wordpress на прод с настройками как в docker. 
-2. Перенести папку customization на прод
-3. Перенести данные. 
-   1. Либо перенести просто записи, страницы и медиафайлы 
-   с помощью файла экспорта. Для этого на develop машине 
-   перейти в админке в инструменты экспорт и сделать файл экспорта. 
-   А на проде установить WordPress плагин для импорта и импортировать экспортированный файл
-   В таком случае всю настройку wordpress придется проводить с нуля и что-то может отвалится
-   2. Сделать дамп develop базы и накатить его целиком или выборочно.
+1. Положить пуcтой wordpress на прод с настройками как в docker.
+2. Используя плагин All-in-One WP Migration сделать дамп из develop машины
+3. Импортировать дамп на прод через админку, раздел All-in-One WP Migration
 
+Ещё можно попробовать после 1 шага просто положить папку customization на прод, 
+а записи страницы и метрики перенести с помощью 
+стандартной тулзы wordpress.(Инструменты/Импорт). Но тут успех под вопросом.
 
-
+### Урл базовых настроек темы 
+`/wp-admin/customize.php`
 
 ## Открытые вопросы
-Как деплоить docker wordpress без docker окружения?
 Кнопки пошарить
 Кнопка to top
 Задеплоить на временный хост.
-накатить бд в докер контейнер

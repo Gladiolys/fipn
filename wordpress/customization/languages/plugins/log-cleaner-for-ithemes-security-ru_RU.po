@@ -1,0 +1,95 @@
+# Translation of Plugins - Log cleaner for iThemes Security - Development (trunk) in Russian
+# This file is distributed under the same license as the Plugins - Log cleaner for iThemes Security - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-10-03 12:53:58+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Log cleaner for iThemes Security - Development (trunk)\n"
+
+#: log-cleaner-ithemes.php:227
+msgid "Distributed Storage"
+msgstr "Распределенное хранение данных"
+
+#: log-cleaner-ithemes.php:278
+msgid "All logs are clear."
+msgstr "Все журналы очищены."
+
+#: log-cleaner-ithemes.php:205
+msgid "Dashboard logs"
+msgstr "Панель управления журналами"
+
+#: log-cleaner-ithemes.php:198 log-cleaner-ithemes.php:206
+#: log-cleaner-ithemes.php:214 log-cleaner-ithemes.php:221
+#: log-cleaner-ithemes.php:228 log-cleaner-ithemes.php:241
+msgid "rows"
+msgstr "строки"
+
+#: log-cleaner-ithemes.php:178
+msgid "Note: Continuing here will delete the selected iThemes Security logs from the database. You absolutely can not undo this action. If in doubt, <a href='%s'>view the logs first</a> or backup your database."
+msgstr "Примечание: Продолжая эту операцию, вы удалите выбранные журналы iThemes Security из базы данных. Вы не сможете отменить это действие. Если вы сомневаетесь, <a href='%s'>просмотрите сначала журналы</a> или создайте резервную копию базы данных."
+
+#. Author URI of the plugin
+msgid "https://rocketapps.com.au/"
+msgstr "https://rocketapps.com.au/"
+
+#. Author of the plugin
+msgid "Michael Ott"
+msgstr "Michael Ott"
+
+#. Description of the plugin
+msgid "Delete iThemes Security logs from the database."
+msgstr "Удалите журналы iThemes Security из базы данных."
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/log-cleaner-for-ithemes-security/"
+msgstr "https://wordpress.org/plugins/log-cleaner-for-ithemes-security/"
+
+#: log-cleaner-ithemes.php:273
+msgid "This is your last chance. Are you sure?"
+msgstr "Это твой последний шанс. Ты уверен?"
+
+#: log-cleaner-ithemes.php:273
+msgid "Clear logs"
+msgstr "Очистить журналы"
+
+#: log-cleaner-ithemes.php:220
+msgid "Temps"
+msgstr "Временные"
+
+#: log-cleaner-ithemes.php:213
+msgid "Lockouts"
+msgstr "Блокировки"
+
+#: log-cleaner-ithemes.php:197
+msgid "Security logs"
+msgstr "Журналы безопасности"
+
+#: log-cleaner-ithemes.php:191
+msgid "All"
+msgstr "Все"
+
+#: log-cleaner-ithemes.php:185
+msgid "Clear the following log tables: "
+msgstr "Очиститm следующие таблицы журналов: "
+
+#. Plugin Name of the plugin
+#: log-cleaner-ithemes.php:104
+msgid "Log cleaner for iThemes Security"
+msgstr "Очиститель журналов для iThemes Security"
+
+#: log-cleaner-ithemes.php:96
+msgid "You need to select at least one item to delete."
+msgstr "Необходимо выбрать хотя бы один элемент для удаления."
+
+#: log-cleaner-ithemes.php:91 log-cleaner-ithemes.php:97
+msgid "Dismiss this notice."
+msgstr "Отклонить это уведомление."
+
+#: log-cleaner-ithemes.php:90
+msgid "The selected logs have been deleted."
+msgstr "Выбранные журналы удалены."
