@@ -92,7 +92,9 @@ services:
       - '0.0.0.0:80:80'
     volumes:
       - './wordpress:/var/www/html'
-      - './nginx:/etc/nginx/conf.d'
+      - './nginx/nginx.conf:/etc/nginx/nginx.conf'
+      - './nginx/conf.d:/etc/nginx/conf.d'
+      - './_logs/nginx:/data/logs:rw'
     networks:
       fipn-network:
         ipv4_address: 10.227.22.5

@@ -2,6 +2,7 @@
 _db
 .idea
 .vscode
+
 wordpress/customization/multimedia
 wordpress/customization/uploads
 wordpress/customization/cache

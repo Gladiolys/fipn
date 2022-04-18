@@ -2,7 +2,7 @@
 1. Установить Docker(https://docs.docker.com/get-started/) и Docker Compose(https://docs.docker.com/compose/install/)
 2. Скопировать .env.example в .env
 3. Заполнить .env
-4. При 1 запуске временно убрать location = /wp-admin/install.php { deny all; }, чтобы установщие был доступен, после установки wordpress вернуть обратно
+4. При 1 запуске, чтобы установить wordpress нужно временно убрать location = /wp-admin/install.php { deny all; } из nginx конфига, чтобы установщик был доступен, после установки wordpress вернуть обратно
 5. Выполнить:
 ```
  docker-compose up
@@ -148,7 +148,7 @@ function wp_version_remove_version() {
 add_filter('the_generator', 'wp_version_remove_version');
 ```
 
-## Как работаю права
+## Как работают права
 После 1 запуска и создания всех папок права устроены следующим образом:
 В папке wordpress у корневой системы права на папки 755, а на файлы 644.
 Файлы и папки принадлежат пользователю 82
@@ -188,6 +188,12 @@ ls -l | awk '{k=0;for(i=0;i<=8;i++)k+=((substr($1,i+2,1)~/[rwx]/) \
              *2^(8-i));if(k)printf("%0o ",k);print}'
 ```
 
+### Что хочу от SEO
+robots.txt
+sitemap
+Предпросмотр как будет выглядеть пост в поисковиках и соц сетях
+Настройку мета тегов
+
 ## Плагины
 1. Ленивая загрузка картинок, видео, iframes и тд. - a3 Lazy Load
 2. Минификация и склеивание JS,CSS, HTML - Autoptimize
@@ -213,12 +219,6 @@ ls -l | awk '{k=0;for(i=0;i<=8;i++)k+=((substr($1,i+2,1)~/[rwx]/) \
 ```
  docker-compose up
 ``` 
-
-### Что хочу от SEO
-robots.txt
-sitemap
-Предпросмотр как будет выглядеть пост в поисках и соц сетях
-Настройку мета тегов
 
 ## Как деплоить без Docker.
 1. Положить пуcтой wordpress на прод с настройками как в docker.
