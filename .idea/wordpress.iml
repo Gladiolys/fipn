@@ -7,6 +7,8 @@
       <excludeFolder url="file://$MODULE_DIR$/wordpress/wp-includes" />
       <excludeFolder url="file://$MODULE_DIR$/wordpress" />
       <excludeFolder url="file://$MODULE_DIR$/_db" />
+      <excludeFolder url="file://$MODULE_DIR$/_logs" />
+      <excludeFolder url="file://$MODULE_DIR$/wordpress/customization/themes/fipn/vendor" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
