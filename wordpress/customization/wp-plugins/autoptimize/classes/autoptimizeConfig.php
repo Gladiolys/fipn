@@ -370,7 +370,7 @@ $_rapidload_link = 'https://misc.optimizingmatters.com/partners/?from=csssetting
 <tr class="html_sub" valign="top">
 <th scope="row"><?php _e( 'Keep HTML comments?', 'autoptimize' ); ?></th>
 <td><label class="cb_label"><input type="checkbox" name="autoptimize_html_keepcomments" <?php echo $conf->get( 'autoptimize_html_keepcomments' ) ? 'checked="checked" ' : ''; ?>/>
-<?php _e( 'Enable this if you want HTML comments to remain in the page or if you want the inline CSS/ JS not to be minified.', 'autoptimize' ); ?></label></td>
+<?php _e( 'Enable this if you want HTML comments to remain in the page.', 'autoptimize' ); ?></label></td>
 </tr>
 </table>
 </li>
@@ -1005,6 +1005,10 @@ if ( true === autoptimizeImages::imgopt_active() && true === apply_filters( 'aut
     public static function get_post_meta_ao_settings( $optim ) {
         if ( ! autoptimizeConfig::is_ao_meta_settings_active() ) {
             // Per page/post settings not active, so always return true (as in; can be optimized).
+            if ( in_array( $optim, array( 'ao_post_preload' ) ) ) {
+                // but make sure to return false for text input.
+                return false;
+            }
             return true;
         }
 

@@ -5,7 +5,7 @@ Donate link: http://blog.futtta.be/2013/10/21/do-not-donate-to-me/
 Requires at least: 4.9
 Tested up to: 5.9
 Requires PHP: 5.6
-Stable tag: 3.0.0 
+Stable tag: 3.0.3 
 
 Autoptimize speeds up your website by optimizing JS, CSS, images (incl. lazy-load), HTML and Google Fonts, asyncing JS, removing emoji cruft and more.
 
@@ -323,6 +323,19 @@ You can get help on the [wordpress.org support forum](http://wordpress.org/suppo
 Just [fork Autoptimize on Github](https://github.com/futtta/autoptimize) and code away!
 
 == Changelog ==
+
+= 3.0.3 =
+* fix for images being preloaded without this being configured when lazyload is on and per page/post settings are off.
+* ensure critical CSS schedule is always known.
+* when deferring non-aggregated JS, make the optimatization exclusions take the full script-tag into account instead of just the src URL.
+
+= 3.0.2 =
+* rollback automatic "minify inline CSS/ JS" which broke more then expected, this will come back as a separate default off option later and can now be enabled with a simple filter: `add_filter( 'autoptimize_html_minify_inline_js_css', '__return_true');` .
+* fix for "Call to undefined method autoptimizeOptionWrapper::delete_option()" in autoptimizeVersionUpdatesHandler.php 
+
+= 3.0.1 =
+* fix for minification of inline script with type text/template breaking the template (e.g. ninja forms), hat tip to @bobsled.
+* fix for regression in import of CSS-files where e.g. fontawesome CSS was broken due to being escaped again with help of @bobsled, thanks man!
 
 = 3.0.0 =
 * fundamental change for new installations: by default Autoptimize will not aggregate JS/ CSS any more (HTTP/2 is ubiquitous and there are other advantages to not aggregating esp. re. inline JS/ CSS and dependancies)
