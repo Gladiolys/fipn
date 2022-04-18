@@ -1188,6 +1188,32 @@ if ( ! class_exists( 'ITSEC_Core' ) ) {
 			return $self->version;
 		}
 
+		/**
+		 * Gets the UTM campaign based on the Install Type.
+		 *
+		 * @return string
+		 */
+		public static function get_utm_campaign(): string {
+			return self::is_pro() ? 'itsecprocta' : 'itsecfreecta';
+		}
+
+		/**
+		 * Gets a link configured for Google Analytics tracking.
+		 *
+		 * @param string $link
+		 * @param string $source
+		 * @param string $medium
+		 *
+		 * @return string
+		 */
+		public static function get_tracking_link( string $link, string $source, string $medium ): string {
+			return add_query_arg( [
+				'utm_source'   => $source,
+				'utm_medium'   => $medium,
+				'utm_campaign' => self::get_utm_campaign(),
+			], $link );
+		}
+
 		public static function is_test_suite( $suite = '' ) {
 			if ( ! defined( 'ITSEC_TEST_SUITE' ) ) {
 				return false;

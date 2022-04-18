@@ -3,7 +3,7 @@ Contributors: ithemes, chrisjean, mattdanner, timothyblynjacobs
 Tags: security plugin, malware scanner, security, malware prevention, two-factor authentication, brute force protection, scanner, password protection, ban, bad bots, audit log
 Requires at least: 5.8
 Tested up to: 6.0
-Stable tag: 8.1.0
+Stable tag: 8.1.1
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -150,6 +150,10 @@ Manage more than one WordPress site? Release lockouts and keep your themes, plug
 7. Advanced Security Tools
 
 == Changelog ==
+
+= 8.1.1 =
+* Bug Fix: Error when visiting the Notifications page after activating a module with notifications for the first time.
+* Bug Fix: Update deprecated withState usages to useState.
 
 = 8.1.0 =
 * Important: iThemes Security now requires WordPress 5.8 or later.
@@ -653,5 +657,5 @@ Manage more than one WordPress site? Release lockouts and keep your themes, plug
 
 == Upgrade Notice ==
 
-= 8.0.2 =
-Version 8.0.0 is a major new release for iThemes Security with a brand new user interface and new features like Two-Factor.
+= 8.1.1 =
+Version 8.1.0 includes new features and important bug fixes.

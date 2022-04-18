@@ -68,7 +68,7 @@ export default function( { dashboardId } ) {
 								position="bottom"
 								headerTitle={ __( 'Edit Cards', 'better-wp-security' ) }
 								expandOnMobile
-								onClickOutside={ closeEditCards }
+								onFocusOutside={ closeEditCards }
 								onClose={ closeEditCards }
 								focusOnMount="container"
 							>

@@ -78,7 +78,7 @@ export default function() {
 							</>
 						) }
 						<ToolbarButton
-							icon="layout"
+							icon="shield-alt"
 							href={ dashboardUrl }
 							text={ __( 'Dashboard', 'better-wp-security' ) }
 						/>

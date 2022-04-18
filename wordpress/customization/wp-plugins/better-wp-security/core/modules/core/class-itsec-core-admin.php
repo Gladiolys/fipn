@@ -61,8 +61,8 @@ class ITSEC_Core_Admin {
 	 * @return array
 	 */
 	public function add_plugin_meta_links( $meta ) {
-
-		$meta[] = '<a href="https://ithemes.com/security/?utm_source=pluginspage&utm_medium=link&utm_campaign=itsecfreecta" target="_blank" rel="noopener noreferrer">' . __( 'Get Support', 'better-wp-security' ) . '</a>';
+		$link   = ITSEC_Core::get_tracking_link( 'https://ithemes.com/security/', 'pluginspage', 'link' );
+		$meta[] = '<a href="' . $link . '" target="_blank" rel="noopener noreferrer">' . __( 'Get Support', 'better-wp-security' ) . '</a>';
 
 		return $meta;
 	}

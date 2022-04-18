@@ -299,7 +299,7 @@ function Recipients( { notification, settings, onChange, usersAndRoles } ) {
 								'Select which users should be emailed.',
 								'better-wp-security'
 							) }
-							value={ settings.user_list }
+							value={ settings.user_list || [] }
 							onChange={ ( userList ) =>
 								onChange( { ...settings, user_list: userList } )
 							}

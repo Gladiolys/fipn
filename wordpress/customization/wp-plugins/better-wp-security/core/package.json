@@ -14,7 +14,7 @@
   "dependencies": {
     "@emotion/css": "^11.7.1",
     "@emotion/react": "^11.5.0",
-    "@ithemes/ui": "^0.3.0",
+    "@ithemes/ui": "^0.4.1",
     "@react-hook/debounce": "^3.0.0",
     "@rjsf/core": "^2.5.1",
     "@wordpress/a11y": "^3.4.1",

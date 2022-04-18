@@ -976,3 +976,6 @@
 	Bug Fix: Allow saving Notifications when "default recipients must contain at least 1 item" error is present.
 	Bug Fix: Help styling on WordPress 5.9.
 	Bug Fix: Compatibility with plugins that expected a logged-in user during lockouts.
+8.1.1 - 2022-04-14 - Timothy Jacobs, Lisa Canini
+	Bug Fix: Error when visiting the Notifications page after activating a module with notifications for the first time.
+	Bug Fix: Update deprecated withState usages to useState.

@@ -44,7 +44,7 @@ export default function App() {
 		<RegisterPage
 			id="notification-center"
 			title={ __( 'Notifications', 'better-wp-security' ) }
-			icon="bell"
+			icon="email-alt"
 			priority={ 20 }
 			roots={ [ 'onboard', 'import', 'settings' ] }
 			key={ asyncNotifications.status + asyncUsersAndRoles.status }
