@@ -9,12 +9,13 @@
     "Theme"
   ],
   "devDependencies": {
-    "@wordpress/stylelint-config": "20.0.1",
+    "@prettier/plugin-php": "^0.18.4",
     "@wordpress/eslint-plugin": "10.0.1",
     "@wordpress/prettier-config": "1.1.2",
-    "rtlcss": "^3.5.0",
+    "@wordpress/stylelint-config": "20.0.1",
     "eslint": "^8.9.0",
-    "prettier": "^2.5.1",
+    "prettier": "^2.6.2",
+    "rtlcss": "^3.5.0",
     "stylelint": "^14.5.1"
   },
   "rtlcssConfig": {
@@ -33,7 +34,7 @@
   "scripts": {
     "compile:rtl": "rtlcss style.css style-rtl.css",
     "lint:css": "stylelint **/*.css --fix",
-    "lint:format": "prettier --write **/*.{css,js,json}",
+    "lint:format": "prettier --write **/*.{css,js,json,php}",
     "lint:js": "eslint 'js/*.js'"
   }
 }
