@@ -143,16 +143,5 @@ endif;
 
 add_action('wp_head', 'fipn_preload_webfonts');
 
-// Hide wordpress version
-if (! function_exists('wp_version_remove_version') ) :
-    function wp_version_remove_version()
-    {
-        return '';
-    }
-
-endif;
-
-add_filter('the_generator', 'wp_version_remove_version');
-
 // Add block patterns
 //require get_template_directory() . '/inc/block-patterns.php';
