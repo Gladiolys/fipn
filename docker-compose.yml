@@ -1,9 +1,19 @@
 version: '3.1'
 
 services:
+  maildev:
+    image: maildev/maildev
+    container_name: maildev
+    restart: always
+    ports:
+      - "1080:1080"
+      - "1025:1025"
+    networks:
+      fipn-network:
+        ipv4_address: 10.227.22.6
   mysql:
     image: mysql:8.0.28
-    # Some mysql operation need this
+    # Some mysql operations need this
     cap_add:
       - SYS_NICE
     container_name: mysql
@@ -37,6 +47,7 @@ services:
   wordpress:
     depends_on:
       - mysql
+      - maildev
     image: wordpress:5.9-php7.4-fpm-alpine
     container_name: wordpress
     restart: always

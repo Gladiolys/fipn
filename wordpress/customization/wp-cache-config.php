@@ -5,6 +5,7 @@ WP-Cache Config Sample File
 See wp-cache.php for author details.
 */
 
+$dismiss_readable_warning = 1;
 $wp_cache_debug_username = '10386389fa1af291347a8dd0debf59da';
 $wp_cache_home_path = '/';
 $wp_cache_slash_check = 1;
