@@ -97,22 +97,103 @@ if (! function_exists('fipn_get_font_face_styles') ) :
 
         return "
 		@font-face{
-			font-family: 'Source Serif Pro';
-			font-weight: 200 900;
+			font-family: 'Roboto';
+			font-weight: 400;
 			font-style: normal;
 			font-stretch: normal;
 			font-display: swap;
-			src: url('" . get_theme_file_uri('assets/fonts/SourceSerif4Variable-Roman.ttf.woff2') . "') format('woff2');
+			src: url('" . get_theme_file_uri('assets/fonts/roboto-v29-latin-ext_latin_cyrillic-ext_cyrillic-regular.woff2') . "') format('woff2'),
+			url('" . get_theme_file_uri('assets/fonts/roboto-v29-latin-ext_latin_cyrillic-ext_cyrillic-regular.woff') . "') format('woff'),
+			url('" . get_theme_file_uri('assets/fonts/roboto-v29-latin-ext_latin_cyrillic-ext_cyrillic-regular.ttf') . "') format('ttf');
 		}
 
 		@font-face{
-			font-family: 'Source Serif Pro';
-			font-weight: 200 900;
+			font-family: 'Roboto';
+			font-weight: 400;
 			font-style: italic;
 			font-stretch: normal;
 			font-display: swap;
-			src: url('" . get_theme_file_uri('assets/fonts/SourceSerif4Variable-Italic.ttf.woff2') . "') format('woff2');
+      src: url('" . get_theme_file_uri('assets/fonts/roboto-v29-latin-ext_latin_cyrillic-ext_cyrillic-italic.woff2') . "') format('woff2'),
+			url('" . get_theme_file_uri('assets/fonts/roboto-v29-latin-ext_latin_cyrillic-ext_cyrillic-italic.woff') . "') format('woff'),
+			url('" . get_theme_file_uri('assets/fonts/roboto-v29-latin-ext_latin_cyrillic-ext_cyrillic-italic.ttf') . "') format('ttf');
 		}
+
+		@font-face{
+			font-family: 'Roboto';
+			font-weight: 700;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+      src: url('" . get_theme_file_uri('assets/fonts/roboto-v29-latin-ext_latin_cyrillic-ext_cyrillic-700.woff2') . "') format('woff2'),
+			url('" . get_theme_file_uri('assets/fonts/roboto-v29-latin-ext_latin_cyrillic-ext_cyrillic-700.woff') . "') format('woff'),
+			url('" . get_theme_file_uri('assets/fonts/roboto-v29-latin-ext_latin_cyrillic-ext_cyrillic-700.ttf') . "') format('ttf');
+		}
+
+    @font-face{
+			font-family: 'Roboto';
+			font-weight: 700;
+			font-style: italic;
+			font-stretch: normal;
+			font-display: swap;
+      src: url('" . get_theme_file_uri('assets/fonts/roboto-v29-latin-ext_latin_cyrillic-ext_cyrillic-700italic.woff2') . "') format('woff2'),
+			url('" . get_theme_file_uri('assets/fonts/roboto-v29-latin-ext_latin_cyrillic-ext_cyrillic-700italic.woff') . "') format('woff'),
+			url('" . get_theme_file_uri('assets/fonts/roboto-v29-latin-ext_latin_cyrillic-ext_cyrillic-700italic.ttf') . "') format('ttf');
+		}
+
+    @font-face{
+      font-family: 'Roboto';
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      font-display: swap;
+      src: url('" . get_theme_file_uri('assets/fonts/roboto-v29-latin-ext_latin_cyrillic-ext_cyrillic-500.woff2') . "') format('woff2'),
+      url('" . get_theme_file_uri('assets/fonts/roboto-v29-latin-ext_latin_cyrillic-ext_cyrillic-500.woff') . "') format('woff'),
+      url('" . get_theme_file_uri('assets/fonts/roboto-v29-latin-ext_latin_cyrillic-ext_cyrillic-500.ttf') . "') format('ttf');
+    }
+
+    @font-face{
+      font-family: 'Roboto';
+      font-weight: 500;
+      font-style: italic;
+      font-stretch: normal;
+      font-display: swap;
+      src: url('" . get_theme_file_uri('assets/fonts/roboto-v29-latin-ext_latin_cyrillic-ext_cyrillic-500italic.woff2') . "') format('woff2'),
+      url('" . get_theme_file_uri('assets/fonts/roboto-v29-latin-ext_latin_cyrillic-ext_cyrillic-500italic.woff') . "') format('woff'),
+      url('" . get_theme_file_uri('assets/fonts/roboto-v29-latin-ext_latin_cyrillic-ext_cyrillic-500italic.ttf') . "') format('ttf');
+    }
+
+    @font-face{
+      font-family: 'Roboto';
+      font-weight: 500;
+      font-style: italic;
+      font-stretch: normal;
+      font-display: swap;
+      src: url('" . get_theme_file_uri('assets/fonts/roboto-v29-latin-ext_latin_cyrillic-ext_cyrillic-500italic.woff2') . "') format('woff2'),
+      url('" . get_theme_file_uri('assets/fonts/roboto-v29-latin-ext_latin_cyrillic-ext_cyrillic-500italic.woff') . "') format('woff'),
+      url('" . get_theme_file_uri('assets/fonts/roboto-v29-latin-ext_latin_cyrillic-ext_cyrillic-500italic.ttf') . "') format('ttf');
+    }
+
+    @font-face{
+      font-family: 'Roboto';
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      font-display: swap;
+      src: url('" . get_theme_file_uri('assets/fonts/roboto-v29-latin-ext_latin_cyrillic-ext_cyrillic-300.woff2') . "') format('woff2'),
+      url('" . get_theme_file_uri('assets/fonts/roboto-v29-latin-ext_latin_cyrillic-ext_cyrillic-300.woff') . "') format('woff'),
+      url('" . get_theme_file_uri('assets/fonts/roboto-v29-latin-ext_latin_cyrillic-ext_cyrillic-300.ttf') . "') format('ttf');
+    }
+
+    @font-face{
+      font-family: 'Roboto';
+      font-weight: 300;
+      font-style: italic;
+      font-stretch: normal;
+      font-display: swap;
+      src: url('" . get_theme_file_uri('assets/fonts/roboto-v29-latin-ext_latin_cyrillic-ext_cyrillic-300italic.woff2') . "') format('woff2'),
+      url('" . get_theme_file_uri('assets/fonts/roboto-v29-latin-ext_latin_cyrillic-ext_cyrillic-300italic.woff') . "') format('woff'),
+      url('" . get_theme_file_uri('assets/fonts/roboto-v29-latin-ext_latin_cyrillic-ext_cyrillic-300italic.ttf') . "') format('ttf');
+    }
 		";
 
     }
