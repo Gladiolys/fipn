@@ -216,7 +216,7 @@ if (! function_exists('fipn_preload_webfonts') ) :
     function fipn_preload_webfonts()
     {
         ?>
-        <link rel="preload" href="<?php echo esc_url(get_theme_file_uri('assets/fonts/SourceSerif4Variable-Roman.ttf.woff2')); ?>" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="<?php echo esc_url(get_theme_file_uri('assets/fonts/roboto-v29-latin-ext_latin_cyrillic-ext_cyrillic-regular.woff2')); ?>" as="font" type="font/woff2" crossorigin>
         <?php
     }
 
@@ -224,5 +224,92 @@ endif;
 
 add_action('wp_head', 'fipn_preload_webfonts');
 
+
+// Allow only selected here block types in editor
+if (! function_exists('fipn_allowed_block_types') ) :
+function fipn_allowed_block_types() {
+
+  return array(
+    // Common
+    'core/paragraph',
+    'core/image',
+    'core/heading',
+    'core/list',
+    'core/gallery',
+    'core/quote',
+    'core/audio',
+    'core/cover',
+    'core/file',
+    'core/video',
+    'core/pullquote',
+    'core/verse',
+    // Formatting
+    'core/table',
+    'core/freeform',
+    'core/html',
+    'core/preformatted',
+    // Layout
+    'core/buttons',
+    'core/columns',
+    'core/group',
+    'core/media-text',
+    'core/more',
+    'core/nextpage',
+    'core/separator',
+    'core/spacer',
+    // Widgets
+    'core/shortcode',
+    'core/categories',
+    'core/latest-posts',
+    'core/search',
+    'core/tag-cloud',
+    // Content
+    'core/query',
+    'core/query-pagination',
+    'core/query-no-results',
+    'core/query-pagination-next',
+    'core/query-pagination-numbers',
+    'core/query-pagination-previous',
+    'core/read-more',
+    'core/navigation',
+    'core/navigation-area',
+    'core/post-author',
+    'core/post-author-biography',
+    'core/post-author-name',
+    'core/post-content',
+    'core/post-date',
+    'core/post-excerpt',
+    'core/post-featured-image',
+    'core/post-navigation-link',
+    'core/post-template',
+    'core/post-terms',
+    'core/post-title',
+    // Embeds
+    'core/embed',
+    // Embedpress
+    'embedpress/embedpress-pdf',
+    'embedpress/document',
+    'embedpress/google-sheets-block',
+    'embedpress/google-docs-block',
+    'embedpress/google-slides-block',
+    // SEO
+    'aioseo/breadcrumbs',
+  );
+
+}
+
+endif;
+
+
+add_filter( 'allowed_block_types_all', 'fipn_allowed_block_types' );
+
+// Hide some embed variations
+function fipn_disable_embed_variation() {
+  wp_enqueue_script( 'fipn-hide-script', get_theme_file_uri( '/assets/js/hideEmbedVariations.js' ), array( 'wp-blocks', 'wp-dom-ready', 'wp-edit-post' ));
+}
+
+add_action( 'enqueue_block_editor_assets', 'fipn_disable_embed_variation' );
+
+
 // Add block patterns
-//require get_template_directory() . '/inc/block-patterns.php';
+require get_template_directory() . '/inc/block-patterns.php';
