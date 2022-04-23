@@ -3,10 +3,10 @@
  * Default header block pattern
  */
 return [
-	'title' => __('Default header', 'fipn'),
-	'categories' => ['header'],
-	'blockTypes' => ['core/template-part/header'],
-	'content' => '<!-- wp:group {"align":"full","layout":{"inherit":true}} -->
+    'title' => __('Default header', 'fipn'),
+    'categories' => ['header'],
+    'blockTypes' => ['core/template-part/header'],
+    'content' => '<!-- wp:group {"align":"full","layout":{"inherit":true}} -->
 					<div class="wp-block-group alignfull"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"bottom":"var(--wp--custom--spacing--l)","top":"var(--wp--custom--spacing--s)"}}},"layout":{"type":"flex","justifyContent":"space-between"}} -->
 					<div class="wp-block-group alignwide" ><!-- wp:group {"layout":{"type":"flex"}} -->
 					<div class="wp-block-group">
@@ -15,6 +15,9 @@ return [
 					<!-- /wp:group -->
 					<!-- wp:navigation {"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right"}} -->
 					<!-- wp:page-list {"isNavigationChild":true,"showSubmenuIcon":true,"openSubmenusOnClick":false} /-->
+          <!-- wp:html -->
+					<ul class="lang-list">'.pll_the_languages(array( 'show_names' => 1, 'show_flags' => 0, 'echo' => 0 )).'</ul>
+          <!-- /wp:html -->
 					<!-- /wp:navigation --></div>
 					<!-- /wp:group --></div>
 					<!-- /wp:group -->',

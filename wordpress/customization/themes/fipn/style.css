@@ -3,7 +3,10 @@ Theme Name: FIPN
 Author: Dmitriy Vergiles
 Description: FIPN Faculty theme
 Version: 1.0.0
+Requires PHP: 7.2
+Version: 1.0
 License: Closed
+Text Domain: fipn
 */
 
 /* Normalize
@@ -543,4 +546,12 @@ pre {
 	margin-top: var(--wp--custom--spacing--s);
 	font-size: var(--wp--preset--font-size--caption);
 	line-height: var(--wp--custom--typography--line-height--caption);
+}
+
+.lang-list {
+	display: flex;
+}
+
+.lang-list .lang-item {
+	padding: 0 var(--wp--custom--spacing--xxs);
 }

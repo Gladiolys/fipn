@@ -137,31 +137,38 @@
       "fontSizes": [
         {
           "size": "12px",
-          "slug": "caption"
+          "slug": "caption",
+          "name": "Caption"
         },
         {
           "size": "14px",
-          "slug": "body"
+          "slug": "body",
+          "name": "Body"
         },
         {
           "size": "16px",
-          "slug": "headline5"
+          "slug": "headline5",
+          "name": "Headline 5"
         },
         {
           "size": "20px",
-          "slug": "headline4"
+          "slug": "headline4",
+          "name": "Headline 4"
         },
         {
           "size": "24px",
-          "slug": "headline3"
+          "slug": "headline3",
+          "name": "Headline 3"
         },
         {
           "size": "30px",
-          "slug": "headline2"
+          "slug": "headline2",
+          "name": "Headline 2"
         },
         {
           "size": "38px",
-          "slug": "headline1"
+          "slug": "headline1",
+          "name": "Headline 1"
         }
       ]
     },
