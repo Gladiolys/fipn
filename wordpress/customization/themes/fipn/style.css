@@ -555,3 +555,7 @@ pre {
 .lang-list .lang-item {
 	padding: 0 var(--wp--custom--spacing--xxs);
 }
+
+.footer {
+	margin-top: auto;
+}
