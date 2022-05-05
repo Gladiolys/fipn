@@ -77,6 +77,16 @@
           "slug": "light-blue",
           "color": "#00a6dc",
           "name": "Light Blue"
+        },
+        {
+          "slug": "very-dark-blue",
+          "color": "#1a1b56",
+          "name": "Very Dark Blue"
+        },
+        {
+          "slug": "gray",
+          "color": "#555555",
+          "name": "Gray"
         }
       ],
       "text": true
@@ -236,7 +246,7 @@
       },
       "link": {
         "color": {
-          "text": "var(--wp--preset--color--light-blue)"
+          "text": "var(--wp--preset--color--blue)"
         }
       }
     },

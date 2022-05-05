@@ -310,6 +310,12 @@ function fipn_disable_embed_variation() {
 
 add_action( 'enqueue_block_editor_assets', 'fipn_disable_embed_variation' );
 
+// Add language switcher shortcode, need to move inside shortcode or block because dynamic content from page to page
+function render_language_switcher(){
+  return '<ul class="language-list">'.pll_the_languages(['show_names' => 1, 'show_flags' => 0, 'echo' => 0, 'hide_current' => 1, 'display_names_as' => 'slug']).'</ul>';
+}
+
+add_shortcode( 'languages-switcher', 'render_language_switcher' );
 
 // Add block patterns
 require get_template_directory() . '/inc/block-patterns.php';

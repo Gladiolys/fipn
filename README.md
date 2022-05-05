@@ -226,6 +226,9 @@ sitemap
 12. Спрятать страницу входа - WPS Hide Login
 13. Настроить связь с SMTP сервером для отправки электронной почты - WP Mail SMTP
 14. Интернационализация - Polylang
+15. Версия для слабовидящих - Button visually impaired
+16. Слайдер - Ultimate Responsive Image Slider - 3.5.6
+17. Поддержка SVG - SVG Support
 
 ## Плагины которые могут пригодится в будущем
 1. Advanced Custom Fields - кастомные поля и типы записей
@@ -323,8 +326,6 @@ https://wp-kama.ru/note/wp-database-schema
 ### Что сделано в коде темы
 1. Ограничены доступные в редакторе блоки
 
-
-
 ## Обновление
 Настройки обновлений оставлены по умолчанию. То есть авто-обновление для плагинов и 
 тем отключено. Переводы авто-обновляются. Настройки обновления ядра wordpress изменены.
@@ -371,12 +372,9 @@ add_filter( 'auto_core_update_send_email', '__return_false' );
 
 ## Открытые вопросы
 Задеплоить на временный хост.
-Как именно делать интернационализацию
-Подумать нужно ли генерировать AMP
-Доступность для слабовидящих
 Поиск по сайту
 
-## Сделать
+## Сделать потом
 1. Прогнать html на валидаторе
 2. Прогнать css на валидаторе
 3. Понять почему часть security заголовков не всегда добавляется
@@ -390,3 +388,5 @@ add_filter( 'auto_core_update_send_email', '__return_false' );
 Список блоков с описанием - https://github.com/WordPress/gutenberg/blob/5654e3dff70d1cd84d7f74aa6d211683a99ff366/docs/reference-guides/core-blocks.md
 
 Как сделать свой блок - https://github.com/WordPress/gutenberg/tree/5654e3dff70d1cd84d7f74aa6d211683a99ff366/docs/getting-started/create-block
+
+Поиск - https://wp-kama.ru/function/get_search_form

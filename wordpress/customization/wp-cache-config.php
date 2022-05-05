@@ -15,8 +15,8 @@ if ( ! defined('WPCACHEHOME') )
 	define( 'WPCACHEHOME', WP_CONTENT_DIR . "/wp-plugins/wp-super-cache/" );
 
 $cache_compression = 1;
-$cache_enabled = true;
-$super_cache_enabled = true;
+$cache_enabled = false;
+$super_cache_enabled = false;
 $cache_max_time = 3600;
 //$use_flock = true; // Set it true or false if you know what to use
 $cache_path = WP_CONTENT_DIR . '/cache/';
@@ -29,7 +29,7 @@ $cache_acceptable_files = array( 'wp-comments-popup.php', 'wp-links-opml.php', '
 $cache_rejected_uri = array('wp-.*\\.php', 'index\\.php');
 $cache_rejected_user_agent = array();
 
-$cache_rebuild_files = 1;
+$cache_rebuild_files = 0;
 
 // Disable the file locking system.
 // If you are experiencing problems with clearing or creating cache files
