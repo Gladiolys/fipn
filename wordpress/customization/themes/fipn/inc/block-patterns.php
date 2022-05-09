@@ -40,6 +40,7 @@ function fipn_register_block_patterns()
     $block_patterns = array(
     'footer-default',
     'header-default',
+    'not-found',
     );
 
     /**

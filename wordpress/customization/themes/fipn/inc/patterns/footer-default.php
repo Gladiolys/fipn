@@ -17,40 +17,40 @@ return [
         </div>
         <ul class="footer__menu-section">
             <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="http://10.227.22.5/o-fakultete/">
+                <a class="footer__menu-item-link" href="'. __('/o-fakultete/', 'fipn') .'">
                    <h5 class="footer__menu-section-header">
-                          О факультете
+                          '. __('About faculty', 'fipn') .'
                     </h5>
                 </a>
             </li>
             <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="http://10.227.22.5/o-fakultete/dekanat/">
-                Деканат
+                <a class="footer__menu-item-link" href="'. __('/o-fakultete/dekanat/', 'fipn') .'">
+                '. __('Dean\'s office', 'fipn') .'
                 </a>
             </li>
             <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="http://10.227.22.5/o-fakultete/missija-i-istorija/">
-                Миссия и история
+                <a class="footer__menu-item-link" href="'. __('/o-fakultete/missija-i-istorija/', 'fipn') .'">
+                '. __('Mission & history', 'fipn') .'
                 </a>
             </li>
             <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="http://10.227.22.5/o-fakultete/kafedry/">
-                Кафедры
+                <a class="footer__menu-item-link" href="'. __('/o-fakultete/kafedry/', 'fipn') .'">
+                '. __('Departments', 'fipn') .'
                 </a>
             </li>
              <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="http://10.227.22.5/o-fakultete/dissertacionnye-sovety/">
-                Диссертационные советы
+                <a class="footer__menu-item-link" href="'. __('/o-fakultete/dissertacionnye-sovety/', 'fipn') .'">
+                '. __('Dissertation councils', 'fipn') .'
                 </a>
             </li>
              <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="http://10.227.22.5/o-fakultete/akkreditacija/">
-                Аккредитация
+                <a class="footer__menu-item-link" href="'. __('/o-fakultete/akkreditacija/', 'fipn') .'">
+                '. __('Accreditation', 'fipn') .'
                 </a>
             </li>
             <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="http://10.227.22.5/o-fakultete/kontakty/">
-                Контакты
+                <a class="footer__menu-item-link" href="'. __('/o-fakultete/kontakty/', 'fipn') .'">
+                '. __('Contacts', 'fipn') .'
                 </a>
             </li>
         </ul>
@@ -59,40 +59,40 @@ return [
         </div>
         <ul class="footer__menu-section">
             <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="http://10.227.22.5/abiturientu/">
+                <a class="footer__menu-item-link" href="'. __('/abiturientu/', 'fipn') .'">
                     <h5 class="footer__menu-section-header">
-                          Абитуриенту
+                          '. __('Applicant', 'fipn') .'
                     </h5>
                 </a>
             </li>
             <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="http://10.227.22.5/abiturientu/bakalavriat/">
-                Бакалавриат
+                <a class="footer__menu-item-link" href="'. __('/abiturientu/bakalavriat/', 'fipn') .'">
+                '. __('Bachelor\'s degree', 'fipn') .'
                 </a>
             </li>
             <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="http://10.227.22.5/abiturientu/magistratura/">
-                Магистратура
+                <a class="footer__menu-item-link" href="'. __('/abiturientu/magistratura/', 'fipn') .'">
+                '. __('Master\'s degree', 'fipn') .'
                 </a>
             </li>
             <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="http://10.227.22.5/abiturientu/aspirantura/">
-                Аспирантура
+                <a class="footer__menu-item-link" href="'. __('/abiturientu/aspirantura/', 'fipn') .'">
+                '. __('Graduate school', 'fipn') .'
                 </a>
             </li>
              <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="http://10.227.22.5/abiturientu/stipendii-i-konkursy/">
-                Стипендии и конкурсы
+                <a class="footer__menu-item-link" href="'. __('/abiturientu/stipendii-i-konkursy/', 'fipn') .'">
+                '. __('Scholarships and competitions', 'fipn') .'
                 </a>
             </li>
              <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="http://10.227.22.5/abiturientu/obshhezhitie/">
-                Общежитие
+                <a class="footer__menu-item-link" href="'. __('/abiturientu/obshhezhitie/', 'fipn') .'">
+                '. __('Dormitory', 'fipn') .'
                 </a>
             </li>
             <li class="footer__menu-item">
                 <a class="footer__menu-item-link" href="https://www.tsu.ru/sveden/ovz.php">
-                Доступная среда
+                '. __('Accessible environment', 'fipn') .'
                 </a>
             </li>
         </ul>
@@ -101,35 +101,35 @@ return [
         </div>
         <ul class="footer__menu-section">
             <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="http://10.227.22.5/studentu/">
+                <a class="footer__menu-item-link" href="'. __('/studentu/', 'fipn') .'">
                     <h5 class="footer__menu-section-header">
-                        Студенту
+                        '. __('Student', 'fipn') .'
                     </h5>
                 </a>
             </li>
             <li class="footer__menu-item">
                 <a class="footer__menu-item-link" href="https://intime.tsu.ru/">
-                Расписание
+                '. __('Schedule', 'fipn') .'
                 </a>
             </li>
             <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="http://10.227.22.5/studentu/jelektronnoe-obuchenie/">
-                Электронное обучение
+                <a class="footer__menu-item-link" href="'. __('/studentu/jelektronnoe-obuchenie/', 'fipn') .'">
+                '. __('E-learning', 'fipn') .'
                 </a>
             </li>
             <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="http://10.227.22.5/studentu/prepodavatelskij-sostav/">
-                Преподавательский состав
+                <a class="footer__menu-item-link" href="'. __('/studentu/prepodavatelskij-sostav/', 'fipn') .'">
+                '. __('Teaching staff', 'fipn') .'
                 </a>
             </li>
              <li class="footer__menu-item">
                 <a class="footer__menu-item-link" href="http://web.tsu.ru/poluchenie-spravki-ob-obuchenii">
-                Заказ справок
+                '. __('Order certificates', 'fipn') .'
                 </a>
             </li>
              <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="http://10.227.22.5/studentu/normativnyj-dokumenty/">
-                Нормативные документы
+                <a class="footer__menu-item-link" href="'. __('/studentu/normativnyj-dokumenty/', 'fipn') .'">
+                '. __('Normative documents', 'fipn') .'
                 </a>
             </li>
         </ul>
@@ -138,35 +138,35 @@ return [
         </div>
         <ul class="footer__menu-section">
             <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="http://10.227.22.5/nauka/">
+                <a class="footer__menu-item-link" href="'. __('/nauka/', 'fipn') .'">
                     <h5 class="footer__menu-section-header">
-                        Наука
+                        '. __('Science', 'fipn') .'
                     </h5>
                 </a>
             </li>
                <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="http://10.227.22.5/nauka/publikacii/">
-                Публикации
+                <a class="footer__menu-item-link" href="'. __('/nauka/publikacii/', 'fipn') .'">
+                '. __('Publications', 'fipn') .'
                 </a>
             </li>
             <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="http://10.227.22.5/nauka/mezhdunarodnoe-sotrudnichestvo/">
-                Международное сотрудничество
+                <a class="footer__menu-item-link" href="'. __('/nauka/mezhdunarodnoe-sotrudnichestvo/', 'fipn') .'">
+                '. __('International cooperation', 'fipn') .'
                 </a>
             </li>
             <li class="footer__menu-item">
                 <a class="footer__menu-item-link" href="http://journals.tsu.ru/history/">
-                Вестник ТГУ.История
+                '. __('TSU Bulletin.History', 'fipn') .'
                 </a>
             </li>
             <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="http://10.227.22.5/nauka/laboratorija-socialno-antropologicheskih-issledovanij/">
-                Лаборатория социально-антропологических исследований
+                <a class="footer__menu-item-link" href="'. __('/nauka/laboratorija-socialno-antropologicheskih-issledovanij/', 'fipn') .'">
+                '. __('Laboratory of social anthropological research', 'fipn') .'
                 </a>
             </li>
              <li class="footer__menu-item">
                 <a class="footer__menu-item-link" href="https://vital.lib.tsu.ru/vital/access/manager/Index">
-                Библиотека
+                '. __('Library', 'fipn') .'
                 </a>
             </li>
         </ul>
@@ -174,7 +174,7 @@ return [
     <hr class="footer__section-divider">
     <section class="footer__contacts">
         <div class="footer__contacts-item">
-            <a class="footer__tsu-logo-link" href="http://10.227.22.5/">
+            <a class="footer__tsu-logo-link" href="/">
                 <object data="' .
 		esc_url(get_template_directory_uri()) .
 		'/assets/icons/footer-logo.svg" alt="' .
@@ -183,28 +183,28 @@ return [
             </a>
         </div>
         <div class="footer__contacts-item">
-            <h5 class="footer__contacts-item-header">Адрес деканата:</h5>
+            <h5 class="footer__contacts-item-header">'. __('Dean\'s office address', 'fipn') .':</h5>
             <p class="footer__contacts-item-content footer__contacts-address">
-            пр. Ленина 34, корпус ТГУ № 3, 3-й этаж, каб. 32
+            '. __('34 Lenin Ave., TSU Building No. 3, 3rd floor, room 32', 'fipn') .'
             </p>
         </div>
         <div class="footer__contacts-item">
-            <h5 class="footer__contacts-item-header">E-mail деканата:</h5>
+            <h5 class="footer__contacts-item-header">'. __('Dean\'s office E-mail', 'fipn') .':</h5>
             <p class="footer__contacts-item-content">
             if.tgu@mail.ru
             </p>
-             <h5 class="footer__contacts-item-header">Отборочная комиссия:</h5>
+             <h5 class="footer__contacts-item-header">'. __('Screening committee', 'fipn') .':</h5>
             <p class="footer__contacts-item-content">
             ab.fipn@gmail.com
             </p>
         </div>
         <div class="footer__contacts-item">
-            <h5 class="footer__contacts-item-header">Телефон деканата:</h5>
+            <h5 class="footer__contacts-item-header">'. __('Dean\'s office phone', 'fipn') .':</h5>
             <p class="footer__contacts-item-content">
             +7 (3822) 785-212
             </p>
             <div class="footer__social-icons">
-                <a class="footer__vk-icon" href="#">
+                <a class="footer__vk-icon" href="https://vk.com/fipn_tsu">
               <object data="' .
 		esc_url(get_template_directory_uri()) .
 		'/assets/icons/vk.svg" alt="' .
@@ -217,19 +217,19 @@ return [
     <section class="footer__end">
         <div class="footer__end-content">
             <p class="footer__faculty-label has-caption-font-size">
-            © Факультет исторических и политических наук ' . date('Y') . '
+            © '. __('Department of history and political science', 'fipn') .' ' . date('Y') . '
             </p>
             <div class="footer__end-line-wrapper">
                 <hr class="footer__end-line">
             </div>
             <p class="footer__politic has-caption-font-size">
-                <a class="footer__politic-link" href="http://10.227.22.5/uslovija-ispolzovanija-materialov/">
-                Условия использования материалов
+                <a class="footer__politic-link" href="'. __('/uslovija-ispolzovanija-materialov/', 'fipn') .'">
+                '. __('Terms of use of materials', 'fipn') .'
                 </a>
             </p>
             <p class="footer__politic has-caption-font-size">
-              <a class="footer__politic-link" href="http://10.227.22.5/privacy-policy/">
-                Политика конфиденциальности
+              <a class="footer__politic-link" href="'. __('/politika-konfidencialnosti/', 'fipn') .'">
+                '. __('Privacy policy', 'fipn') .'
               </a>
            </p>
         </div>

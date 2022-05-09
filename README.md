@@ -386,7 +386,7 @@ add_filter( 'auto_core_update_send_email', '__return_false' );
 Дока по theme.json - https://github.com/WordPress/gutenberg/blob/5654e3dff70d1cd84d7f74aa6d211683a99ff366/docs/how-to-guides/themes/theme-json.md
 
 Список блоков с описанием - https://github.com/WordPress/gutenberg/blob/5654e3dff70d1cd84d7f74aa6d211683a99ff366/docs/reference-guides/core-blocks.md
-
+или https://fullsiteediting.com/block-reference/
 Как сделать свой блок - https://github.com/WordPress/gutenberg/tree/5654e3dff70d1cd84d7f74aa6d211683a99ff366/docs/getting-started/create-block
 
 Поиск - https://wp-kama.ru/function/get_search_form

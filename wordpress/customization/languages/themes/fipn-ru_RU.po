@@ -36,18 +36,157 @@ msgstr "Шапка"
 msgid "Default footer"
 msgstr "Футер по умолчанию"
 
-#: inc/patterns/footer-default.php:16
-#, php-format
-msgid "Proudly powered by %s"
-msgstr "С гордостью сделано %s"
+#: inc/patterns/footer-default.php
+msgid "Dean's office address"
+msgstr "Адрес деканата"
 
-#: inc/patterns/footer-default.php:17
-msgid "https://wordpress.org"
-msgstr "https://wordpress.org"
+#: inc/patterns/footer-default.php
+msgid "34 Lenin Ave., TSU Building No. 3, 3rd floor, room 32"
+msgstr "пр. Ленина 34, корпус ТГУ № 3, 3-й этаж, каб. 32"
+
+#: inc/patterns/footer-default.php
+msgid "Dean's office E-mail"
+msgstr "E-mail деканата"
+
+#: inc/patterns/footer-default.php
+msgid "Screening committee"
+msgstr "Отборочная комиссия"
+
+#: inc/patterns/footer-default.php
+msgid "Dean's office phone"
+msgstr "Телефон деканата"
+
+#: inc/patterns/footer-default.php
+msgid "Department of history and political science"
+msgstr "Факультет исторических и политических наук"
+
+#: inc/patterns/footer-default.php
+msgid "Terms of use of materials"
+msgstr "Условия использования материалов"
+
+#: inc/patterns/footer-default.php
+msgid "Privacy policy"
+msgstr "Политика конфиденциальности"
 
 #: inc/patterns/header-default.php:6
 msgid "Default header"
 msgstr "Шапка по умолчанию"
+
+#: inc/patterns/footer-default.php:181
+msgid "TSU Logo icon"
+msgstr "Логотип ТГУ"
+
+#: inc/patterns/footer-default.php:211
+msgid "VK icon"
+msgstr "Иконка VK"
+
+#: inc/patterns/header-default.php:22
+msgid "About faculty"
+msgstr "О факультете"
+
+#: inc/patterns/header-default.php:62
+msgid "Search icon"
+msgstr "Иконка поиска"
+
+#: inc/patterns/header-default.php
+msgid "Dean's office"
+msgstr "Деканат"
+
+#: inc/patterns/header-default.php
+msgid "Mission & history"
+msgstr "Миссия и история"
+
+#: inc/patterns/header-default.php
+msgid "Departments"
+msgstr "Кафедры"
+
+#: inc/patterns/header-default.php
+msgid "Dissertation councils"
+msgstr "Диссертационные советы"
+
+#: inc/patterns/header-default.php
+msgid "Accreditation"
+msgstr "Аккредитация"
+
+#: inc/patterns/header-default.php
+msgid "Contacts"
+msgstr "Контакты"
+
+#: inc/patterns/header-default.php
+msgid "Applicant"
+msgstr "Абитуриенту"
+
+#: inc/patterns/header-default.php
+msgid "Bachelor's degree"
+msgstr "Бакалавриат"
+
+#: inc/patterns/header-default.php
+msgid "Master's degree"
+msgstr "Магистратура"
+
+#: inc/patterns/header-default.php
+msgid "Graduate school"
+msgstr "Аспирантура"
+
+#: inc/patterns/header-default.php
+msgid "Scholarships and competitions"
+msgstr "Стипендии и конкурсы"
+
+#: inc/patterns/header-default.php
+msgid "Dormitory"
+msgstr "Общежитие"
+
+#: inc/patterns/header-default.php
+msgid "Accessible environment"
+msgstr "Доступная среда"
+
+#: inc/patterns/header-default.php
+msgid "Student"
+msgstr "Студенту"
+
+#: inc/patterns/header-default.php
+msgid "Schedule"
+msgstr "Расписание"
+
+#: inc/patterns/header-default.php
+msgid "E-learning"
+msgstr "Электронное обучение"
+
+#: inc/patterns/header-default.php
+msgid "Teaching staff"
+msgstr "Преподавательский состав"
+
+#: inc/patterns/header-default.php
+msgid "Order certificates"
+msgstr "Заказ справок"
+
+#: inc/patterns/header-default.php
+msgid "Normative documents"
+msgstr "Нормативные документы"
+
+#: inc/patterns/header-default.php
+msgid "Science"
+msgstr "Наука"
+
+#: inc/patterns/header-default.php
+msgid "Publications"
+msgstr "Публикации"
+
+#: inc/patterns/header-default.php
+msgid "International cooperation"
+msgstr "Международное сотрудничество"
+
+#: inc/patterns/header-default.php
+msgid "TSU Bulletin.History"
+msgstr "Вестник ТГУ.История"
+
+#: inc/patterns/header-default.php
+msgid "Laboratory of social anthropological research"
+msgstr "Лаборатория социально-антропологических исследований"
+
+#: inc/patterns/header-default.php
+msgid "Library"
+msgstr "Библиотека"
 
 #: theme.json
 msgctxt "Template part name"
