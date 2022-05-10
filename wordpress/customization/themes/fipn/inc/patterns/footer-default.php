@@ -3,11 +3,11 @@
  * Default footer
  */
 return [
-	'title' => __('Default footer', 'fipn'),
-	'categories' => ['footer'],
-	'blockTypes' => ['core/template-part/footer'],
-	'content' =>
-		'
+    'title' => __('Default footer', 'fipn'),
+    'categories' => ['footer'],
+    'blockTypes' => ['core/template-part/footer'],
+    'content' =>
+        '
 <!-- wp:group {"align":"wide","layout":{"inherit":true}} -->
 <div class="wp-block-group alignwide footer">
     <!-- wp:html -->
@@ -176,10 +176,10 @@ return [
         <div class="footer__contacts-item">
             <a class="footer__tsu-logo-link" href="/">
                 <object data="' .
-		esc_url(get_template_directory_uri()) .
-		'/assets/icons/'. __('footer-logo-en', 'fipn') .'.svg" alt="' .
-		esc_attr__('TSU Logo icon', 'fipn') .
-		'" width="188px" height="82px"></object>
+        esc_url(get_template_directory_uri()) .
+        '/assets/icons/'. __('footer-logo-en', 'fipn') .'.svg" alt="' .
+        esc_attr__('TSU Logo icon', 'fipn') .
+        '" width="188px" height="82px"></object>
             </a>
         </div>
         <div class="footer__contacts-item">
@@ -206,10 +206,10 @@ return [
             <div class="footer__social-icons">
                 <a class="footer__vk-icon" href="https://vk.com/fipn_tsu">
               <object data="' .
-		esc_url(get_template_directory_uri()) .
-		'/assets/icons/vk.svg" alt="' .
-		esc_attr__('VK icon', 'fipn') .
-		'" width="31px" height="18px"></object>
+        esc_url(get_template_directory_uri()) .
+        '/assets/icons/vk.svg" alt="' .
+        esc_attr__('VK icon', 'fipn') .
+        '" width="31px" height="18px"></object>
                 </a>
             </div>
         </div>

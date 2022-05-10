@@ -11,7 +11,7 @@ class UserAgent
      */
     public static function getHttpUserAgent()
     {
-        return apply_filters('wp_statistics_user_http_agent', (isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : ''));
+        return apply_filters('wp_statistics_user_http_agent', (isset($_SERVER['HTTP_USER_AGENT']) ? wp_unslash($_SERVER['HTTP_USER_AGENT']) : ''));
     }
 
     /**
@@ -46,7 +46,7 @@ class UserAgent
     public static function BrowserList($all = true)
     {
 
-        //List Of Detect Browser in WP Statistics
+        //List Of Detect Browser in WP-Statistics
         $list        = array(
             "chrome"  => __("Chrome", 'wp-statistics'),
             "firefox" => __("Firefox", 'wp-statistics'),

@@ -3,11 +3,11 @@
  * Default header block pattern
  */
 return [
-	'title' => __('Default header', 'fipn'),
-	'categories' => ['header'],
-	'blockTypes' => ['core/template-part/header'],
-	'content' =>
-		'
+    'title' => __('Default header', 'fipn'),
+    'categories' => ['header'],
+    'blockTypes' => ['core/template-part/header'],
+    'content' =>
+        '
 <!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between"},"className":"header"} -->
 <div class="wp-block-group alignwide header">
     <!-- wp:group {"layout":{"type":"flex"},"className":"header__logo"} -->

@@ -220,7 +220,6 @@ sitemap
 6. Отключение комментов - Отключить комментарии
 7. Статистика - WP Statistics
 8. Встраивание PDF и Google docs - EmbedPress
-9. Настройки SSL сертификата - Really Simple SSL
 10. Миграция, бэкапы и восстановление - All-in-One WP Migration
 11. Отключение неиспользуемого REST API - Отключить REST API
 12. Спрятать страницу входа - WPS Hide Login
@@ -240,6 +239,7 @@ sitemap
 7. Cookie Notice & Compliance for GDPR / CCPA - разрешение на сохранение куки
 8. AddToAny Share Buttons - кнопки пошарить в соц сетях
 9. TinyPNG - JPEG, PNG & WebP image compression - сжималка изображений
+10. Really Simple SSL - Настройки SSL сертификата
 
 ## Особенности
 1. Для загрузки больших файлов используется кастомный uploads.ini

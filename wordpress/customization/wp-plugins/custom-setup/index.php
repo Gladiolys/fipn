@@ -82,8 +82,8 @@ if (! function_exists('disallow_same_post_title') ) :
     return $false;
   }
 endif;
-
-add_filter( 'wp_insert_post_empty_content', 'disallow_same_post_title', 10, 2 );
+// Отключено, нужно подебажить насколько решение рабочее
+//add_filter( 'wp_insert_post_empty_content', 'disallow_same_post_title', 10, 2 );
 
 // Hide wordpress version
 if (! function_exists('wp_version_remove_version') ) :
