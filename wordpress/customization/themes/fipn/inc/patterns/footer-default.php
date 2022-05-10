@@ -174,12 +174,12 @@ return [
     <hr class="footer__section-divider">
     <section class="footer__contacts">
         <div class="footer__contacts-item">
-            <a class="footer__tsu-logo-link" href="/">
+            <a class="footer__tsu-logo-link" href="'. __('/en/', 'fipn') .'">
                 <object data="' .
         esc_url(get_template_directory_uri()) .
         '/assets/icons/'. __('footer-logo-en', 'fipn') .'.svg" alt="' .
         esc_attr__('TSU Logo icon', 'fipn') .
-        '" width="188px" height="82px"></object>
+        '" width="224px" height="116px"></object>
             </a>
         </div>
         <div class="footer__contacts-item">

@@ -1365,7 +1365,7 @@ pre {
 	margin: 0;
 }
 
-.post-item {
+.post-item.post-item {
 	height: 150px;
 	overflow: hidden;
 	margin: 0;
@@ -1378,7 +1378,7 @@ pre {
 	flex-basis: auto !important;
 }
 
-.post-item__image {
+.post-item__image.post-item__image {
 	margin: 0 var(--wp--custom--spacing--s) 0 0;
 }
 
@@ -1588,4 +1588,8 @@ pre {
 /* Page rubric*/
 .page-rubric.page-rubric.page-rubric {
 	margin: var(--wp--custom--spacing--xxl) 0 var(--wp--custom--spacing--xl) 0;
+}
+
+.page-default.page-default.page-default {
+  margin: var(--wp--custom--spacing--xxl) 0;
 }

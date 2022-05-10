@@ -335,6 +335,10 @@ msgstr "/politika-konfidencialnosti/"
 msgid "/en/terms-of-use-of-materials/"
 msgstr "/uslovija-ispolzovanija-materialov/"
 
+#: inc/patterns/footer-default.php:163
+msgid "/en/"
+msgstr "/"
+
 #: inc/patterns/not-found.php:6
 msgid "Not found message"
 msgstr "Сообщение не найдено"
