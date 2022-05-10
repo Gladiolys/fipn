@@ -242,3 +242,107 @@ msgstr "Тиль"
 msgctxt "Color name"
 msgid "Light Blue"
 msgstr "Светло Голубой"
+
+#: inc/patterns/footer-default.php:20
+msgid "/en/about-faculty/"
+msgstr "/o-fakultete/"
+
+#: inc/patterns/footer-default.php:27
+msgid "/en/about-faculty/dean-s-office/"
+msgstr "/o-fakultete/dekanat/"
+
+#: inc/patterns/footer-default.php:32
+msgid "/en/about-faculty/mission-history/"
+msgstr "/o-fakultete/missija-i-istorija/"
+
+#: inc/patterns/footer-default.php:37
+msgid "/en/about-faculty/departments/"
+msgstr "/o-fakultete/kafedry/"
+
+#: inc/patterns/footer-default.php:42
+msgid "/en/about-faculty/dissertation-councils/"
+msgstr "/o-fakultete/dissertacionnye-sovety/"
+
+#: inc/patterns/footer-default.php:47
+msgid "/en/about-faculty/accreditation/"
+msgstr "/o-fakultete/akkreditacija/"
+
+#: inc/patterns/footer-default.php:52
+msgid "/en/about-faculty/contacts/"
+msgstr "/o-fakultete/kontakty/"
+
+#: inc/patterns/footer-default.php:62
+msgid "/en/applicant/"
+msgstr "/abiturientu/"
+
+#: inc/patterns/footer-default.php:69
+msgid "/en/applicant/bachelor-s-degree/"
+msgstr "/abiturientu/bakalavriat/"
+
+#: inc/patterns/footer-default.php:74
+msgid "/en/applicant/master-s-degree/"
+msgstr "/abiturientu/magistratura/"
+
+#: inc/patterns/footer-default.php:79
+msgid "/en/applicant/graduate-school/"
+msgstr "/abiturientu/aspirantura/"
+
+#: inc/patterns/footer-default.php:84
+msgid "/en/applicant/scholarships-and-competitions/"
+msgstr "/abiturientu/stipendii-i-konkursy/"
+
+#: inc/patterns/footer-default.php:89
+msgid "/en/applicant/dormitory/"
+msgstr "/abiturientu/obshhezhitie/"
+
+#: inc/patterns/footer-default.php:104
+msgid "/en/student/"
+msgstr "/studentu/"
+
+#: inc/patterns/footer-default.php:116
+msgid "/en/student/e-learning/"
+msgstr "/studentu/jelektronnoe-obuchenie/"
+
+#: inc/patterns/footer-default.php:121
+msgid "/en/student/teaching-staff/"
+msgstr "/studentu/prepodavatelskij-sostav/"
+
+#: inc/patterns/footer-default.php:131
+msgid "/en/student/normative-documents/"
+msgstr "/studentu/normativnyj-dokumenty/"
+
+#: inc/patterns/footer-default.php:141
+msgid "/en/science/"
+msgstr "/nauka/"
+
+#: inc/patterns/footer-default.php:148
+msgid "/en/science/publications/"
+msgstr "/nauka/publikacii/"
+
+#: inc/patterns/footer-default.php:153
+msgid "/en/science/international-cooperation/"
+msgstr "/nauka/mezhdunarodnoe-sotrudnichestvo/"
+
+#: inc/patterns/footer-default.php:163
+msgid "/en/science/laboratory-of-social-anthropological-research/"
+msgstr "/nauka/laboratorija-socialno-antropologicheskih-issledovanij/"
+
+#: inc/patterns/footer-default.php:163
+msgid "/en/privacy-policy/"
+msgstr "/politika-konfidencialnosti/"
+
+#: inc/patterns/footer-default.php:163
+msgid "/en/terms-of-use-of-materials/"
+msgstr "/uslovija-ispolzovanija-materialov/"
+
+#: inc/patterns/not-found.php:6
+msgid "Not found message"
+msgstr "Сообщение не найдено"
+
+#: inc/patterns/not-found.php:19
+msgid "Page not found"
+msgstr "Страница не найдена"
+
+#: inc/patterns/footer-default.php:131
+msgid "footer-logo-en"
+msgstr "footer-logo-ru"

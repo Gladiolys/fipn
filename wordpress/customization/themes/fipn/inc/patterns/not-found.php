@@ -15,9 +15,9 @@ return [
 		'">404 </a></p>
   <!-- /wp:paragraph -->
   <!-- wp:heading {"fontSize":"headline1","className":"not-found__title"} -->
-      <h1 class="has-headline-1-font-size not-found__title">' .
+      <h2 class="has-headline-1-font-size not-found__title">' .
 		__('Page not found', 'fipn') .
-		'</h1>
+		'</h2>
   <!-- /wp:heading -->
 </div>
 <!-- /wp:group -->

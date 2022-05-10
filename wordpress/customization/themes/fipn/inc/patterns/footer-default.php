@@ -17,39 +17,39 @@ return [
         </div>
         <ul class="footer__menu-section">
             <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="'. __('/o-fakultete/', 'fipn') .'">
+                <a class="footer__menu-item-link" href="'. __('/en/about-faculty/', 'fipn') .'">
                    <h5 class="footer__menu-section-header">
                           '. __('About faculty', 'fipn') .'
                     </h5>
                 </a>
             </li>
             <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="'. __('/o-fakultete/dekanat/', 'fipn') .'">
+                <a class="footer__menu-item-link" href="'. __('/en/about-faculty/dean-s-office/', 'fipn') .'">
                 '. __('Dean\'s office', 'fipn') .'
                 </a>
             </li>
             <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="'. __('/o-fakultete/missija-i-istorija/', 'fipn') .'">
+                <a class="footer__menu-item-link" href="'. __('/en/about-faculty/mission-history/', 'fipn') .'">
                 '. __('Mission & history', 'fipn') .'
                 </a>
             </li>
             <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="'. __('/o-fakultete/kafedry/', 'fipn') .'">
+                <a class="footer__menu-item-link" href="'. __('/en/about-faculty/departments/', 'fipn') .'">
                 '. __('Departments', 'fipn') .'
                 </a>
             </li>
              <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="'. __('/o-fakultete/dissertacionnye-sovety/', 'fipn') .'">
+                <a class="footer__menu-item-link" href="'. __('/en/about-faculty/dissertation-councils/', 'fipn') .'">
                 '. __('Dissertation councils', 'fipn') .'
                 </a>
             </li>
              <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="'. __('/o-fakultete/akkreditacija/', 'fipn') .'">
+                <a class="footer__menu-item-link" href="'. __('/en/about-faculty/accreditation/', 'fipn') .'">
                 '. __('Accreditation', 'fipn') .'
                 </a>
             </li>
             <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="'. __('/o-fakultete/kontakty/', 'fipn') .'">
+                <a class="footer__menu-item-link" href="'. __('/en/about-faculty/contacts/', 'fipn') .'">
                 '. __('Contacts', 'fipn') .'
                 </a>
             </li>
@@ -59,34 +59,34 @@ return [
         </div>
         <ul class="footer__menu-section">
             <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="'. __('/abiturientu/', 'fipn') .'">
+                <a class="footer__menu-item-link" href="'. __('/en/applicant/', 'fipn') .'">
                     <h5 class="footer__menu-section-header">
                           '. __('Applicant', 'fipn') .'
                     </h5>
                 </a>
             </li>
             <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="'. __('/abiturientu/bakalavriat/', 'fipn') .'">
+                <a class="footer__menu-item-link" href="'. __('/en/applicant/bachelor-s-degree/', 'fipn') .'">
                 '. __('Bachelor\'s degree', 'fipn') .'
                 </a>
             </li>
             <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="'. __('/abiturientu/magistratura/', 'fipn') .'">
+                <a class="footer__menu-item-link" href="'. __('/en/applicant/master-s-degree/', 'fipn') .'">
                 '. __('Master\'s degree', 'fipn') .'
                 </a>
             </li>
             <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="'. __('/abiturientu/aspirantura/', 'fipn') .'">
+                <a class="footer__menu-item-link" href="'. __('/en/applicant/graduate-school/', 'fipn') .'">
                 '. __('Graduate school', 'fipn') .'
                 </a>
             </li>
              <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="'. __('/abiturientu/stipendii-i-konkursy/', 'fipn') .'">
+                <a class="footer__menu-item-link" href="'. __('/en/applicant/scholarships-and-competitions/', 'fipn') .'">
                 '. __('Scholarships and competitions', 'fipn') .'
                 </a>
             </li>
              <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="'. __('/abiturientu/obshhezhitie/', 'fipn') .'">
+                <a class="footer__menu-item-link" href="'. __('/en/applicant/dormitory/', 'fipn') .'">
                 '. __('Dormitory', 'fipn') .'
                 </a>
             </li>
@@ -101,7 +101,7 @@ return [
         </div>
         <ul class="footer__menu-section">
             <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="'. __('/studentu/', 'fipn') .'">
+                <a class="footer__menu-item-link" href="'. __('/en/student/', 'fipn') .'">
                     <h5 class="footer__menu-section-header">
                         '. __('Student', 'fipn') .'
                     </h5>
@@ -113,12 +113,12 @@ return [
                 </a>
             </li>
             <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="'. __('/studentu/jelektronnoe-obuchenie/', 'fipn') .'">
+                <a class="footer__menu-item-link" href="'. __('/en/student/e-learning/', 'fipn') .'">
                 '. __('E-learning', 'fipn') .'
                 </a>
             </li>
             <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="'. __('/studentu/prepodavatelskij-sostav/', 'fipn') .'">
+                <a class="footer__menu-item-link" href="'. __('/en/student/teaching-staff/', 'fipn') .'">
                 '. __('Teaching staff', 'fipn') .'
                 </a>
             </li>
@@ -128,7 +128,7 @@ return [
                 </a>
             </li>
              <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="'. __('/studentu/normativnyj-dokumenty/', 'fipn') .'">
+                <a class="footer__menu-item-link" href="'. __('/en/student/normative-documents/', 'fipn') .'">
                 '. __('Normative documents', 'fipn') .'
                 </a>
             </li>
@@ -138,19 +138,19 @@ return [
         </div>
         <ul class="footer__menu-section">
             <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="'. __('/nauka/', 'fipn') .'">
+                <a class="footer__menu-item-link" href="'. __('/en/science/', 'fipn') .'">
                     <h5 class="footer__menu-section-header">
                         '. __('Science', 'fipn') .'
                     </h5>
                 </a>
             </li>
                <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="'. __('/nauka/publikacii/', 'fipn') .'">
+                <a class="footer__menu-item-link" href="'. __('/en/science/publications/', 'fipn') .'">
                 '. __('Publications', 'fipn') .'
                 </a>
             </li>
             <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="'. __('/nauka/mezhdunarodnoe-sotrudnichestvo/', 'fipn') .'">
+                <a class="footer__menu-item-link" href="'. __('/en/science/international-cooperation/', 'fipn') .'">
                 '. __('International cooperation', 'fipn') .'
                 </a>
             </li>
@@ -160,7 +160,7 @@ return [
                 </a>
             </li>
             <li class="footer__menu-item">
-                <a class="footer__menu-item-link" href="'. __('/nauka/laboratorija-socialno-antropologicheskih-issledovanij/', 'fipn') .'">
+                <a class="footer__menu-item-link" href="'. __('/en/science/laboratory-of-social-anthropological-research/', 'fipn') .'">
                 '. __('Laboratory of social anthropological research', 'fipn') .'
                 </a>
             </li>
@@ -177,7 +177,7 @@ return [
             <a class="footer__tsu-logo-link" href="/">
                 <object data="' .
 		esc_url(get_template_directory_uri()) .
-		'/assets/icons/footer-logo.svg" alt="' .
+		'/assets/icons/'. __('footer-logo-en', 'fipn') .'.svg" alt="' .
 		esc_attr__('TSU Logo icon', 'fipn') .
 		'" width="188px" height="82px"></object>
             </a>
@@ -191,17 +191,17 @@ return [
         <div class="footer__contacts-item">
             <h5 class="footer__contacts-item-header">'. __('Dean\'s office E-mail', 'fipn') .':</h5>
             <p class="footer__contacts-item-content">
-            if.tgu@mail.ru
+                <a class="footer__contacts-item-link" href="mailto:if.tgu@mail.ru">if.tgu@mail.ru</a>
             </p>
              <h5 class="footer__contacts-item-header">'. __('Screening committee', 'fipn') .':</h5>
             <p class="footer__contacts-item-content">
-            ab.fipn@gmail.com
+                <a class="footer__contacts-item-link" href="mailto:ab.fipn@gmail.com">ab.fipn@gmail.com</a>
             </p>
         </div>
         <div class="footer__contacts-item">
             <h5 class="footer__contacts-item-header">'. __('Dean\'s office phone', 'fipn') .':</h5>
             <p class="footer__contacts-item-content">
-            +7 (3822) 785-212
+                <a class="footer__contacts-item-link" href="tel:+73822785212">+7 (3822) 785-212</a>
             </p>
             <div class="footer__social-icons">
                 <a class="footer__vk-icon" href="https://vk.com/fipn_tsu">
