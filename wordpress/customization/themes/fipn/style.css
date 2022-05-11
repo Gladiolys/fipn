@@ -966,6 +966,13 @@ pre {
 	border-bottom-color: var(--wp--preset--color--blue);
 }
 
+/** Temporary hide **/
+.header__button:first-of-type {
+	display: none;
+}
+
+/**Temporary hide **/
+
 .header .bvi-shortcode > .bvi-open:hover {
 	background-color: rgba(56, 85, 212, 0.25);
 	border-bottom-color: var(--wp--preset--color--blue);
@@ -1591,5 +1598,5 @@ pre {
 }
 
 .page-default.page-default.page-default {
-  margin: var(--wp--custom--spacing--xxl) 0;
+	margin: var(--wp--custom--spacing--xxl) 0;
 }
